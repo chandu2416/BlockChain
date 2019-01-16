@@ -91,7 +91,7 @@ router.post('/api/addFarmerRecordKapy', (req, res) => {
 
 console.log("Farmer request body :" +JSON.stringify(FarmerReq));
 
-requestify.request('http://ec2-52-90-144-179.compute-1.amazonaws.com:3000/api/LandRecord', {
+requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/LandRecord', {
 method: 'POST',
 body: FarmerReq ,
 dataType: 'json' 
@@ -181,7 +181,7 @@ console.log(response.getBody());
 //		}
 //		console.log("VerificationReq request body :" +JSON.stringify(VerificationReq));
 
-		requestify.request('http://ec2-52-90-144-179.compute-1.amazonaws.com:3000/api/Verification', {
+		requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/Verification', {
 		method: 'POST',
 		body: VerificationReq ,
 		dataType: 'json' 
@@ -248,7 +248,7 @@ router.post('/api/updateNumberOfSeedServiced', (req, res) => {
 		
 		console.log("GoKReq request body :" +JSON.stringify(GoKReq));
 
-requestify.request('http://ec2-52-90-144-179.compute-1.amazonaws.com:3000/api/GoK', {
+requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/GoK', {
 method: 'POST',
 body: GoKReq ,
 dataType: 'json' 
@@ -269,7 +269,7 @@ console.log(response.getBody());
 		}
 		console.log("MonitoringReq request body :" +JSON.stringify(MonitoringReq));
 
-		requestify.request('http://ec2-52-90-144-179.compute-1.amazonaws.com:3000/api/Monitoring', {
+		requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/Monitoring', {
 		method: 'POST',
 		body: MonitoringReq ,
 		dataType: 'json' 
@@ -335,7 +335,7 @@ router.post('/api/updateAmountProcessed', (req, res) => {
 		
 		console.log("TrsryReq request body :" +JSON.stringify(TrsryReq));
 
-requestify.request('http://ec2-52-90-144-179.compute-1.amazonaws.com:3000/api/Treasury', {
+requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/Treasury', {
 method: 'POST',
 body: TrsryReq ,
 dataType: 'json' 
@@ -357,7 +357,7 @@ console.log(response.getBody());
 		}
 		console.log("DisbursementReq request body :" +JSON.stringify(DisbursementReq));
 
-		requestify.request('http://ec2-52-90-144-179.compute-1.amazonaws.com:3000/api/Disbursement', {
+		requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/Disbursement', {
 		method: 'POST',
 		body: DisbursementReq ,
 		dataType: 'json' 
