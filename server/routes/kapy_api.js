@@ -94,7 +94,7 @@ router.post('/api/addFarmerRecordKapy', (req, res) => {
 
 console.log("Farmer request body :" +JSON.stringify(FarmerReq));
 
-requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/Registration', {
+requestify.request('http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.kapy.payments.Registration', {
 method: 'POST',
 body: FarmerReq ,
 dataType: 'json' 
@@ -159,7 +159,7 @@ router.post('/api/updateKapyApprovedStatus', (req, res) => {
 		}
 		console.log("NurseryReq request body :" +JSON.stringify(NurseryReq));
 
-requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/Verification', {
+requestify.request('http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.kapy.payments.Verification', {
 method: 'POST',
 body: NurseryReq ,
 dataType: 'json' 
@@ -229,7 +229,7 @@ router.post('/api/updateNumberOfSeedServiced', (req, res) => {
 
 		console.log("GoKReq request body :" +JSON.stringify(GoKReq));
 
-requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/Monitoring', {
+requestify.request('http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.kapy.payments.Monitoring', {
 method: 'POST',
 body: GoKReq ,
 dataType: 'json' 
@@ -299,7 +299,7 @@ router.post('/api/updateAmountProcessed', (req, res) => {
 		
 		console.log("TrsryReq request body :" +JSON.stringify(TrsryReq));
 
-requestify.request('http://ec2-3-87-238-243.compute-1.amazonaws.com:3000/api/Disbursement', {
+requestify.request('http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.kapy.payments.Disbursement', {
 method: 'POST',
 body: TrsryReq ,
 dataType: 'json' 
